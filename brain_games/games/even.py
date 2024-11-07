@@ -7,13 +7,13 @@ def is_even(num):
     return num % 2 == 0
 
 
-def get_num_and_cor_ans()->tuple:
+def get_num_and_cor_ans():
     num = random.randint(1, 100)
     if is_even(num):
         cor_ans = 'yes'
     else:
         cor_ans = 'no'
-    return num, cor_ans
+    return str(num), cor_ans
 
 
 def run_even_game():

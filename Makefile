@@ -7,6 +7,18 @@ brain-games:
 brain-even:
 	poetry run brain-even
 
+brain-calc:
+	poetry run brain-calc
+
+brain-gcd:
+	poetry run brain-gcd
+
+brain-progression:
+	poetry run brain-progression
+
+brain-prime:
+	poetry run brain-prime
+
 build:
 	poetry build
 
@@ -19,3 +31,5 @@ package-install:
 lint:
 	poetry run flake8 brain_games
 
+package-reinstall:
+	pip install --user --force-reinstall dist/*.whl
