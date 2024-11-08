@@ -15,7 +15,6 @@ def get_progression_and_mis_num():
         progression.append(str(element))
     mis_num = random.choice(progression)
     index_mis_num = progression.index(mis_num)
-    print(index_mis_num)
     progression[index_mis_num] = '..'
     progression_str = ' '.join(progression)
     return progression_str, str(mis_num)
