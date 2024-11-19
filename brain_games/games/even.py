@@ -1,4 +1,4 @@
-import random
+from brain_games.get_num import get_random_num
 from brain_games.engine import run_game
 from brain_games.constants import EVEN_INSTRUCTION
 
@@ -8,11 +8,8 @@ def is_even(num):
 
 
 def get_num_and_cor_ans():
-    num = random.randint(1, 100)
-    if is_even(num):
-        cor_ans = 'yes'
-    else:
-        cor_ans = 'no'
+    num = get_random_num()
+    cor_ans = 'yes' if is_even(num) else 'no'
     return str(num), cor_ans
 
 

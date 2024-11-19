@@ -1,13 +1,21 @@
 import random
-from brain_games.constants import CALC_INSTRUCTION, MATH_SIMBOLS
+from brain_games.get_num import get_random_num
+from brain_games.constants import CALC_INSTRUCTION
 from brain_games.engine import run_game
 
 
+def get_math_symbol_ans(first_num, second_num):
+    return random.choice([
+        ('+', first_num + second_num),
+        ('-', first_num - second_num),
+        ('*', first_num * second_num)
+    ])
+
 def get_expression_and_cor_ans():
-    num_1, num_2 = random.randint(1, 100), random.randint(1, 100)
-    expression = f'{num_1} {random.choice(MATH_SIMBOLS)} {num_2}'
-    cor_ans = str(eval(expression))
-    return expression, cor_ans
+    first_num, second_num = get_random_num(), get_random_num()
+    symbol, cor_ans = get_math_symbol_ans(first_num, second_num)
+    expression = f'{first_num} {symbol} {second_num}'
+    return expression, str(cor_ans)
 
 
 def run_game_calc():

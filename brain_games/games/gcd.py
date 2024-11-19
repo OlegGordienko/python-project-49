@@ -1,13 +1,13 @@
-import random
 import math
+from brain_games.get_num import get_random_num
 from brain_games.constants import GCD_INSTRUCTION
 from brain_games.engine import run_game
 
 
 def get_nums_gcd():
-    num_1, num_2 = random.randint(1, 100), random.randint(1, 100)
-    gcd = math.gcd(num_1, num_2)
-    nums = f'{num_1} {num_2}'
+    first_num, second_num = get_random_num(), get_random_num()
+    gcd = math.gcd(first_num, second_num)
+    nums = f'{first_num} {second_num}'
     return nums, str(gcd)
 
 
