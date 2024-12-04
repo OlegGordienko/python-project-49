@@ -13,19 +13,19 @@ pip uninstall hexlet-code
 
 ### INSTRUCTIONS:  
 #### This is a five math games:
-1. ##### Calculator  
+##### Calculator  
 To win this games you have to solve three math tasks  
 To start the game run brain-calc
-2. ##### Even numbers  
+##### Even numbers  
 To win this game you have to give an answer is given number even or not  
 To start the game run brain-even
-3. ##### Greatest common dividor  
+##### Greatest common dividor  
 To win this game you have to find a GCD of three pairs of numbers  
 To start the game run brain-gcd
-4. ##### Prime numbers  
+##### Prime numbers  
 To win this game you have to give an answer ig given number prime or not  
 To start the game run brain-prime
-5. ##### Progression  
+##### Progression  
 To win this game you have to find the missing number in progression  
 To start the game run brain-progression
 
