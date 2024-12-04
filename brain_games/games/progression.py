@@ -1,5 +1,5 @@
 import random
-from brain_games.get_num import get_random_num
+from brain_games.utils import get_random_num
 from brain_games.constants import (PROGRESSION_INSTRUCTION,
                                    MIN_LEN_PROGRESSION as min,
                                    MAX_LEN_PROGRESSION as max)
@@ -12,10 +12,10 @@ def get_progression_and_mis_num():
     len_progression = random.randint(min, max)
     missed_num_ind = random.randint(0, len_progression - 1)
     progression_str = ' '.join([
-        '..' if i == missed_num_ind else str(start + start * i)
+        '..' if i == missed_num_ind else str(start + dif * i)
         for i in range(len_progression)
     ])
-    mis_num = start + start * missed_num_ind
+    mis_num = start + dif * missed_num_ind
     return progression_str, str(mis_num)
 
 

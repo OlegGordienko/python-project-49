@@ -8,10 +8,10 @@ publish:
 	poetry publish --dry-run
 
 package-install:
-	python3 -m pip install --user dist/*.whl
+	python3 -m pip install --break-system-packages --user dist/*.whl
 
 package-reinstall:
-	pip install --user --force-reinstall dist/*.whl
+	pip install --break-system-packages --user --force-reinstall dist/*.whl
 
 brain-games:
 	poetry run brain-games

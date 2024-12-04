@@ -3,13 +3,13 @@ from brain_games.constants import AMOUNT_OF_ROUNDS
 
 
 def run_game(get_question_and_answer, instruction):
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
+    name = prompt.string('Welcome to the Brain Games!\n'
+                         'May I have your name? ')
     print(f'Hello, {name}!\n'
           f'{instruction}')
     for _ in range(AMOUNT_OF_ROUNDS):
         question, correct_answer = get_question_and_answer()
-        print('Question: ' + question)
+        print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
         if user_answer == correct_answer:
             print('Correct!')
