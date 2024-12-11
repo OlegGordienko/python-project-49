@@ -1,4 +1,5 @@
 import math
+
 from brain_games.constants import PRIME_INSTRUCTION
 from brain_games.engine import run_game
 from brain_games.utils import get_random_num

@@ -1,7 +1,8 @@
 import random
-from brain_games.utils import get_random_num
+
 from brain_games.constants import CALC_INSTRUCTION
 from brain_games.engine import run_game
+from brain_games.utils import get_random_num
 
 
 def get_math_symbol_ans(first_num, second_num):

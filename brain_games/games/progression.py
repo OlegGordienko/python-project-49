@@ -1,9 +1,10 @@
 import random
-from brain_games.utils import get_random_num
-from brain_games.constants import (PROGRESSION_INSTRUCTION,
-                                   MIN_LEN_PROGRESSION as min,
-                                   MAX_LEN_PROGRESSION as max)
+
+from brain_games.constants import MAX_LEN_PROGRESSION as max
+from brain_games.constants import MIN_LEN_PROGRESSION as min
+from brain_games.constants import PROGRESSION_INSTRUCTION
 from brain_games.engine import run_game
+from brain_games.utils import get_random_num
 
 
 def get_progression_and_mis_num():

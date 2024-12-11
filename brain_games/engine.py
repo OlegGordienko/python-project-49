@@ -1,4 +1,5 @@
 import prompt
+
 from brain_games.constants import AMOUNT_OF_ROUNDS
 
 
